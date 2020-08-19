@@ -1,5 +1,6 @@
 var canvas = document.getElementById("paint");
 var input = document.getElementById("hex");
+var clearButton = document.getElementById("clear");
 
 canvas.style.position = "absolute";
 canvas.style.top = "50%";
@@ -42,6 +43,11 @@ function draw(e) {
   ctx.moveTo((e.clientX - horizontal_offset), (e.clientY - 20));
 }
 
+function clear() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
 canvas.addEventListener("mousedown", startDraw);
 canvas.addEventListener("mouseup", stopDraw);
 canvas.addEventListener("mousemove", draw);
+clearButton.addEventListener("click", clear);

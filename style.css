@@ -23,3 +23,12 @@ body {
     left: 3%;
     transform: translateY(-50%);
 }
+
+#clear {
+    position: absolute;
+    height: 20px;
+    width: 100px;
+    top: 55%;
+    left: 3.5%;
+    transform: translateY(-50%);
+}
