@@ -1,0 +1,18 @@
+html, body {
+    height: 100%;
+    position: static;
+}
+
+body {
+    background-image: url("paint-background.jpg")
+    
+}
+#paint {
+    border: 5px solid black;
+    position: absolute;
+    height: 75vh;
+    width: 75vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
